@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "./static/css/main.136cd8ea.css",
+    "main.js": "./static/js/main.d26a7b5a.js",
+    "static/js/488.90f3fc84.chunk.js": "./static/js/488.90f3fc84.chunk.js",
+    "static/media/bookshelfs.png": "./static/media/bookshelfs.63495435163ed027cb42.png",
+    "static/media/logo_colored.png": "./static/media/logo_colored.f48513be7e51f22852b6.png",
+    "index.html": "./index.html",
+    "static/media/tiktok.svg": "./static/media/tiktok.16109ec85c13d9e64f2e37a8c4b776b2.svg",
+    "static/media/instagram.svg": "./static/media/instagram.5d1224dbdef420deb63335f61a3213ca.svg",
+    "static/media/linkedin.svg": "./static/media/linkedin.0d51ae3478b768677880f0768089edd2.svg",
+    "static/media/facebook.svg": "./static/media/facebook.6ee5e49550cec539b2184273fddd8762.svg",
+    "main.136cd8ea.css.map": "./static/css/main.136cd8ea.css.map",
+    "main.d26a7b5a.js.map": "./static/js/main.d26a7b5a.js.map",
+    "488.90f3fc84.chunk.js.map": "./static/js/488.90f3fc84.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.136cd8ea.css",
+    "static/js/main.d26a7b5a.js"
+  ]
+}
