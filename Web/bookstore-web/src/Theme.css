@@ -1,0 +1,6 @@
+:root {
+    --primary-color: hsl(229, 75%, 16%);
+    --primary-accent: hsl(7, 92%, 60%);
+    --primary-offset: hsl(169, 92%, 10%);
+    --secondary-color: #333;
+  }

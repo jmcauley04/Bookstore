@@ -4,91 +4,19 @@
   --primary-offset: hsl(169, 92%, 10%);
   --secondary-color: #333;
   --mobile: 768px;
-  --logo-sign-width: 80vw;
-  --logo-sign-max-width: 500px;
 }
 
 body {
   font-family: "inter", "sans-serif";
 }
 
-.page-wrapper {
-  display: grid;
-  grid-template-rows: 3fr 2fr;
-  height: 100vh;
-  width: 100vw;
-  justify-content: stretch;
-  align-items: stretch;
+main {
+    min-height: 200px;
 }
 
-.left {
-  display: grid;
-  place-items: center;
-  place-content: center;
-  /* background-image: linear-gradient(-45deg, hsl(229, 75%, 16%) 0%, hsl(169, 92%, 10%) 100%); */
-  background-image: url(./images/bookshelfs.png);
-  background-size: cover;
-  background-position: center;
-  border-bottom: 5px solid hsl(229, 35%, 16%);
-}
-
-.App {
-  text-align: center;
-}
-
-.slogan {
-  margin-top: 20px;
-  font-size: 40px;
-  color: black;
-  font-weight: 100;
-}
-
-#slogan-books {
-  font-weight: 700;
-  font-size: 30px;
-  text-transform: uppercase;
-}
-
-#slogan-community {
-  font-family: "Poiret One", "serif";
-  filter: drop-shadow(2px 2px 2px #00000060);
-}
-
-#slogan-souther-charm {
-  font-family: "Charmonman", "serif";
-}
-
-.right {
-  position: relative;
-  display: grid;
-  gap: 1em;
-  color: rgb(58, 58, 58);
-  align-content: center;
-  justify-items: center;
-  /* grid-template-rows: min-content 1fr min-content; */
-  background-color: #fffefd40;
-}
-
-.header-image {
-  display: grid;
-  padding: 1em;
-  filter: brightness(0.9) grayscale(0.2) drop-shadow(-2px 6px 6px #00000090)
-    blur(0.5px);
-  display: grid;
-  place-items: center;
-}
-
-#page-name {
-  font-size: 1.5em;
-  margin: 0;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  font-weight: 100;
-}
-
-#page-name span {
-  font-weight: 700;
-  font-size: 1.5em;
+ul, li {
+    padding: 0;
+    margin: 0;
 }
 
 .App-link {
@@ -97,13 +25,11 @@ body {
 
 input {
   padding: 0.5em;
-  color: white;
-  background: #000000f0;
+  background: #00000050;
   border: none;
   border-radius: 3px;
-  width: 150px;
-  font-size: 10px;
-  padding: 1em 1em;
+  font-size: 14px;
+  padding: .5em 1em;
 }
 
 input::placeholder {
@@ -158,37 +84,6 @@ button:disabled:focus {
   outline: none;
 }
 
-.notify {
-  display: flex;
-  gap: 0.5em;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 @media screen and (min-width: 768px) {
-  :root {
-    --logo-sign-width: 50vw;
-    --logo-sign-max-width: 600px;
-  }
-  .page-wrapper {
-    grid-template-rows: 1fr;
-    grid-template-columns: 3fr 2fr;
-  }
-
-  .left {
-    border-right: 5px solid hsl(229, 35%, 16%);
-    border-bottom: none;
-  }
-  
-.footer {
-    position: absolute;
-    bottom: 0;
-  }
+    
 }

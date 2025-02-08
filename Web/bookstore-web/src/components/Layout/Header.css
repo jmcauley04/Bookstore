@@ -1,0 +1,23 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    height: var(--header-height);
+    box-sizing: border-box;
+    gap: 1rem;
+    color: rgb(54, 54, 54);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #f5f5f5;
+}
+
+header .search {
+    flex-grow: 1;
+}
+
+.user-menu {
+    display: flex;
+    gap: 1rem;
+}

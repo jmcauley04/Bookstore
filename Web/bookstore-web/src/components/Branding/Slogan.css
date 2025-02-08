@@ -1,0 +1,21 @@
+.slogan-wrapper {
+    margin-top: 20px;
+    font-size: 40px;
+    color: black;
+    font-weight: 100;
+  }
+  
+  #slogan-books {
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+  
+  #slogan-community {
+    font-family: "Poiret One", "serif";
+    filter: drop-shadow(2px 2px 2px #00000060);
+  }
+  
+  #slogan-souther-charm {
+    font-family: "Charmonman", "serif";
+  }

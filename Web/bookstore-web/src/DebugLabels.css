@@ -1,0 +1,81 @@
+:root {
+    --debug-font-weight: bold;
+    --debug-font-size: 50px;
+    --debug-letter-spacing: 5px;
+    --debug-opacity: 0.2;
+}
+
+footer {
+    position: relative;
+}
+
+footer::after {
+    content: "footer";
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: var(--debug-font-size);
+    letter-spacing: var(--debug-letter-spacing);
+    font-weight: var(--debug-font-weight);
+    opacity: var(--debug-opacity);
+}
+
+header {
+    position: relative;
+}
+
+header::after {
+    content: "header";
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: var(--debug-font-size);
+    letter-spacing: var(--debug-letter-spacing);
+    font-weight: var(--debug-font-weight);
+    opacity: var(--debug-opacity);
+}
+
+main {
+    position: relative;
+}
+
+main::after {
+    content: "main";
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: var(--debug-font-size);
+    letter-spacing: var(--debug-letter-spacing);
+    font-weight: var(--debug-font-weight);
+    opacity: var(--debug-opacity);
+}
+
+.banner {
+    position: relative;
+}
+
+.banner::after {
+    content: "banner";
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: var(--debug-font-size);
+    letter-spacing: var(--debug-letter-spacing);
+    font-weight: var(--debug-font-weight);
+    opacity: var(--debug-opacity);
+}
+
+.hero {
+    position: relative;
+}
+
+.hero::after {
+    content: "hero";
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: var(--debug-font-size);
+    letter-spacing: var(--debug-letter-spacing);
+    font-weight: var(--debug-font-weight);
+    opacity: var(--debug-opacity);
+}

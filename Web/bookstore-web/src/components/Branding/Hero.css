@@ -1,0 +1,17 @@
+.hero-wrapper {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: var(--hero-height);
+}
+
+.hero-wrapper .hero-background {
+    --hero-border: hsl(229, 35%, 16%) 4px solid;
+    padding: 0 20px;
+    background-image: url("../../images/bookshelfs.png");
+    background-size: cover;
+    background-position: 0 43%;
+    background-repeat: no-repeat;
+    border-top: var(--hero-border);
+    border-bottom: var(--hero-border);
+}

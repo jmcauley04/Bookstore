@@ -1,36 +1,30 @@
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Connect from "./components/Connect";
-import EmailInput from "./components/EmailInput";
-import Logo from "./components/Logo";
+// import "./DebugLabels.css";
+import Hero from "./components/Branding/Hero";
+import Footer from "./components/Layout/Footer";
+import Header from "./components/Layout/Header";
+import Banner from "./components/Sections/Banner";
+import Home from "./components/pages/home/Home";
 
 function App() {
-    
   return (
-    <div className="App">
-      <div className="page-wrapper">
-        <div className="left">
-          <div className="header-image">
-            <div><Logo /></div>
-          </div>
+    <Router>
+      <div className="App">
+        <div className="page-wrapper">
+          <Banner text="Save $ on orders over $100 by earning free shipping!" />
+          <Header />
+          <Hero />
+          <main>
+            <Routes>
+                <Route path="/" element={<Home />} />
+            </Routes>
+          </main>
         </div>
-        <div className="right">
-            <div className="slogan"><span id="slogan-books">Books</span>, <span id="slogan-community">community</span>, & <br/><span id="slogan-souther-charm">a little Southern charm</span></div>
-            <span
-              style={{
-                fontSize: "20px",
-                fontWeight: 500,
-                letterSpacing: ".1em"
-              }}
-            >
-              coming soon.
-            </span>     
-            <EmailInput />
-          <div className="footer">
-            {/* <Connect /> */}
-          </div>
-        </div>
+        <Footer />
       </div>
-    </div>
+    </Router>
   );
 }
 

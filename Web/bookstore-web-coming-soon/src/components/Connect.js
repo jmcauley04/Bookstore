@@ -7,7 +7,7 @@ import './Connect.css'
 
 export default function Connect() {
   return (
-    <div className='connect-wrapper' style={{display: "flex", gap: "1em", justifyContent: "center", alignItems: "center"}}>
+    <div style={{display: "flex", gap: "1em", justifyContent: "center", alignItems: "center"}}>
         <div className='connect-row'>
             <div>
                 <Instagram />

@@ -1,0 +1,137 @@
+nav ul {
+    display: flex;
+    gap: .75rem;
+    text-transform: uppercase;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    background-color: black;
+    color: white;
+    z-index: 1000;
+    transition: all 0.4s ease;
+    padding: .5rem 1rem;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-rows: 0fr;
+}
+
+nav .storename {
+    text-transform: uppercase;
+    padding-top: .5rem;
+    line-height: 1rem;
+    margin-top: .4rem;
+    margin-bottom: -.4rem;
+    font-size: 2rem;
+    font-family: "Charmonman", "serif";
+}
+
+nav > div {
+    overflow: hidden;
+}
+
+nav.open {
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.hamburger {
+    display: grid;
+    align-content: center;
+}
+
+nav .account-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 1rem;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 2px;
+    background-color: currentColor;
+    border-radius: 4px;
+    margin: 2px;
+    transition: all 0.3s ease;
+}
+
+.bar.open {
+  background-color: red; /* Example of a different style when open */
+}
+
+.exit {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    color: rgb(202, 202, 202);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: none;
+}
+
+.exit.open {
+    display: block;
+}
+
+
+.exit:hover {
+    color: white;
+}
+
+@media (min-width: 768px) {
+    
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        height: 1.5em;
+    }    
+
+    nav {
+        grid-template-rows: 1fr;
+        position: unset;
+        background-color: transparent;
+        width: auto;
+    }
+
+    nav .storename, 
+    nav .account-options, 
+    nav .connect-options,
+    nav .exit,
+    nav hr {
+        display: none!important;
+    }
+    
+
+    .nav-links {
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+        color: black;
+        flex-wrap: wrap;
+    }
+}
