@@ -15,15 +15,14 @@
   padding: 1em;
 }
 
-.logo-wrapper .sign {    
-  --logo-sign-width: 80vw;
-  --logo-sign-max-width: 500px;  
+.logo-wrapper .sign {
+  --logo-sign-max-width: 500px;
   background-image: url("../../images/logo_colored.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   max-width: var(--logo-sign-max-width);
-  width: var(--logo-sign-width);
+  width: 60vw;
   aspect-ratio: 533/300;
   filter: drop-shadow(2px 2px 2px #00000060);
 }
@@ -92,5 +91,9 @@
 
   .left {
     border-right: 5px solid hsl(229, 35%, 16%);
+  }
+
+  .logo-wrapper .sign {
+    width: 80vw;
   }
 }
