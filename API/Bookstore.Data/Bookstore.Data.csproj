@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bookstore.Transact\Bookstore.Transact.csproj" />
+    <ProjectReference Include="..\Bookstore.Register\Bookstore.Register.csproj" />
+    <ProjectReference Include="..\Bookstore.Inventory\Bookstore.Inventory.csproj" />
+    <ProjectReference Include="..\Transact\Transact.csproj" />
+  </ItemGroup>
+
+</Project>
